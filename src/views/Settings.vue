@@ -1,0 +1,44 @@
+<template>
+    <div class="container">
+        <h1>Settings</h1>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+        <p>Tet</p>
+    </div>
+</template>
