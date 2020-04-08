@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Dashboard from '../views/Dashboard.vue'
+import Airplay from '../views/Airplay.vue'
+import Accesspoint from '../views/Accesspoint.vue'
+import Bluetooth from '../views/Bluetooth.vue'
+import Raspi from '../views/Raspi.vue'
+import Settings from '../views/Settings.vue'
 import Wifi from '../views/Wifi.vue'
 import About from '../views/About.vue'
 
@@ -13,6 +19,31 @@ Vue.use(VueRouter)
     component: Dashboard
   },
   {
+    path: '/airplay',
+    name: 'Airplay',
+    component: Airplay
+  },
+  {
+    path: '/accesspoint',
+    name: 'Accesspoint',
+    component: Accesspoint
+  },
+  {
+    path: '/bluetooth',
+    name: 'Bluetooth',
+    component: Bluetooth
+  },
+  {
+    path: '/raspi',
+    name: 'Raspi',
+    component: Raspi
+  },
+  {
+    path: '/settings',
+    name: 'Settings',
+    component: Settings
+  },
+  {
     path: '/wifi',
     name: 'WLAN',
     component: Wifi
@@ -21,7 +52,7 @@ Vue.use(VueRouter)
     path: '/about',
     name: 'About',
     component: About
-  }
+  },
 ]
 
 const router = new VueRouter({
