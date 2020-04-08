@@ -1,11 +1,16 @@
 <template>
-    <div class="container dashboard">
-        <h1>Dashboard</h1>
+    <div class="container">
+        <h1>Dashboard smartboombox <PackageVersion /></h1>
     </div>
 </template>
 
 <script>
+import PackageVersion from '../components/PackageVersion';
+
 export default {
-    name: "Dashboard"
+    name: "Dashboard",
+    components: {
+        PackageVersion
+    }
 }
 </script>

@@ -1,43 +1,17 @@
 <template>
-  <div class="container about">
+  <div class="container">
     <h1>About</h1>
-    <table>
-        <tr>
-            <th>Information</th>
-            <th></th>
-        </tr>
-        <tr>
-            <td>App:</td>
-            <td>{{ this.name }}</td>
-        </tr>
-        <tr>
-            <td>Version:</td>
-            <td>{{ this.version }}</td>
-        </tr>
-        <tr>
-            <td>Author:</td>
-            <td>{{ this.author }}</td>
-        </tr>
-        <tr>
-            <td>Description:</td>
-            <td>{{ this.description }}</td>
-        </tr>
-    </table>
+    <PackageInfo />
   </div>
 </template>
 
 <script>
-import {name, version, author, description} from '../../package.json';
+import PackageInfo from '../components/PackageInfo';
 
 export default {
   name: 'About',
-  data() {
-    return {
-      name,
-      version,
-      author,
-      description
-    };
+  components: {
+    PackageInfo
   }
 }
 </script>
