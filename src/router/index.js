@@ -2,8 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Dashboard from '../views/Dashboard.vue'
-import Airplay from '../views/Airplay.vue'
-import Accesspoint from '../views/Accesspoint.vue'
 import Bluetooth from '../views/Bluetooth.vue'
 import Raspi from '../views/Raspi.vue'
 import Settings from '../views/Settings.vue'
@@ -17,16 +15,6 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Dashboard',
     component: Dashboard
-  },
-  {
-    path: '/airplay',
-    name: 'Airplay',
-    component: Airplay
-  },
-  {
-    path: '/accesspoint',
-    name: 'Accesspoint',
-    component: Accesspoint
   },
   {
     path: '/bluetooth',
