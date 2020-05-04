@@ -4,6 +4,12 @@
   "private": true,
   "description": "Smartboombox is the UI for a webradio driven on a raspberry pi",
   "author": "Marco Ris",
+  "members": "Marco Ris, John Lüdi",
+  "organization": "Travoltis Inc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Travoltis/smartboombox.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,6 +22,8 @@
     "vuetify": "^2.2.11"
   },
   "devDependencies": {
+    "@mdi/font": "^5.1.45",
+    "@mdi/js": "^5.1.45",
     "@vue/cli-plugin-babel": "^4.3.0",
     "@vue/cli-plugin-eslint": "^4.3.0",
     "@vue/cli-plugin-router": "^4.3.0",
@@ -48,10 +56,5 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ],
-  "organization": "Travoltis Inc",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Travoltis/smartboombox.git"
-  }
+  ]
 }
