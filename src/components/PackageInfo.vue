@@ -2,8 +2,7 @@
   <div>
     <table>
         <tr>
-            <th>Information</th>
-            <th></th>
+            <th colspan="2">Information</th>
         </tr>
         <tr>
             <td>App:</td>
@@ -14,19 +13,29 @@
             <td>{{ this.version }}</td>
         </tr>
         <tr>
-            <td>Author:</td>
+            <td>Programmer:</td>
             <td>{{ this.author }}</td>
         </tr>
         <tr>
             <td>Description:</td>
             <td>{{ this.description }}</td>
         </tr>
+        <tr>
+            <td>Organization:</td>
+            <td>{{ this.organization }}</td>
+        </tr>
+        <tr>
+            <td>Credits:</td>
+            <td>{{ this.members }}</td>
+        </tr>
     </table>
+    <img src="../assets/travoltis_logo.png">
+    <h2>Travoltis Inc</h2>
   </div>
 </template>
 
 <script>
-  import {name, version, author, description} from '../../package.json';
+  import { name, version, author, description, organization, members } from '../../package.json';
 
   export default {
     name: 'PackageInfo',
@@ -36,42 +45,46 @@
         name,
         version,
         author,
-        description
+        description,
+        organization,
+        members
       };
     }
   }
 </script>
 
 <style lang="scss">
+@import '../scss/style.scss';
+
 table {
-    background-color: white;
-    border: 1px solid gray;
-    border-collapse: collapse;
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
+  margin: auto;
+}
+
+th {
+  background: #4CAF50;
+}
+td {
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid $grayColor;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+img {
     display: block;
-    margin: 12% auto;
-    width: 960px;
+    margin: 20px auto;
+}
 
-    tr {
-        display: block;
-
-        &:nth-child(even) {
-        background-color: #f2f2f2;
-        }
-
-        th {
-        background-color: #4CAF50;
-        color: white;
-        padding-bottom: 12px;
-        padding-top: 12px;
-        text-align: left;
-        }
-
-        th,
-        td {
-        border: 1px solid #ddd;
-        padding: 8px;
-        width: 480px;
-        }
-    }
+h2 {
+    text-align: center;
 }
 </style>
