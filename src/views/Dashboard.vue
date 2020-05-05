@@ -8,7 +8,6 @@
 import PackageVersion from '../components/PackageVersion';
 
 export default {
-    name: "Dashboard",
     components: {
         PackageVersion
     }
