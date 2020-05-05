@@ -2,12 +2,11 @@
   <div class="player">
     <p>Radio32</p>
     <div>
-        <v-btn id="playBtn" v-on:click="play" depressed class="green white--text"><v-icon>{{playIcon}}</v-icon></v-btn>
-        <v-btn id="pauseBtn" v-on:click="pause" depressed class="hidden green white--text"><v-icon>{{pauseIcon}}</v-icon></v-btn>
-        <v-btn v-on:click="mute" depressed class="red white--text"><v-icon>{{muteIcon}}</v-icon></v-btn>
-        <v-btn v-on:click="volup" depressed class="blue white--text"><v-icon>{{volHighIcon}}</v-icon></v-btn>
-        <v-btn v-on:click="voldown" depressed class="blue white--text"><v-icon>{{volLowIcon}}</v-icon></v-btn>
-        <input type="hidden" id="playing" value="false">
+        <v-btn id="playBtn" @click="play" depressed class="green white--text"><v-icon>{{playIcon}}</v-icon></v-btn>
+        <v-btn id="pauseBtn" @click="pause" depressed class="hidden green white--text"><v-icon>{{pauseIcon}}</v-icon></v-btn>
+        <v-btn @click="mute" depressed class="red white--text"><v-icon>{{muteIcon}}</v-icon></v-btn>
+        <v-btn @click="volup" depressed class="blue white--text"><v-icon>{{volHighIcon}}</v-icon></v-btn>
+        <v-btn @click="voldown" depressed class="blue white--text"><v-icon>{{volLowIcon}}</v-icon></v-btn>
     </div>
   </div>
 </template>
@@ -17,26 +16,28 @@
 import { mdiPlay, mdiPause, mdiVolumeOff, mdiVolumeHigh, mdiVolumeMedium } from '@mdi/js'
 
 export default {
-    name: 'Player',
-    data: () => ({
-        playIcon: mdiPlay,
-        pauseIcon: mdiPause,
-        muteIcon: mdiVolumeOff,
-        volHighIcon: mdiVolumeHigh,
-        volLowIcon: mdiVolumeMedium
-    }),
+    data() {
+        return {
+            playIcon: mdiPlay,
+            pauseIcon: mdiPause,
+            muteIcon: mdiVolumeOff,
+            volHighIcon: mdiVolumeHigh,
+            volLowIcon: mdiVolumeMedium,
+            playing: false
+        }
+    },
     methods: {
-        play: () => {
+        play: function() {
             document.querySelector('#playBtn').classList.add('hidden');
             document.querySelector('#pauseBtn').classList.remove('hidden');
-            let playing = !!document.querySelector('#playing').value;
-            console.log('Playing?', playing);
+            this.playing = true;
+            console.log('Playing?', this.playing);
         },
-        pause: () => {
+        pause: function() {
             document.querySelector('#playBtn').classList.remove('hidden');
             document.querySelector('#pauseBtn').classList.add('hidden');
-            let playing = !document.querySelector('#playing').value;
-            console.log('Playing?', playing);
+            this.playing = false;
+            console.log('Playing?', this.playing);
         },
         mute: () => {
             console.log('Mute');
