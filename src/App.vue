@@ -11,7 +11,6 @@ import Navbar from './components/Navbar'
 import Player from './components/Player'
 
 export default {
-    name: 'App',
     components: {
         Navbar,
         Player

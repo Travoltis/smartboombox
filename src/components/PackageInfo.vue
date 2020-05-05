@@ -38,8 +38,6 @@
   import { name, version, author, description, organization, members } from '../../package.json';
 
   export default {
-    name: 'PackageInfo',
-
     data() {
       return {
         name,

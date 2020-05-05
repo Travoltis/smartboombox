@@ -6,8 +6,6 @@
 import {version} from '../../package.json';
 
 export default {
-    name: 'PackageInfo',
-
     data() {
         return {
         version
