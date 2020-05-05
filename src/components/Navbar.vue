@@ -11,12 +11,11 @@
 
 <script>
 // icons from https://materialdesignicons.com/ with prefix mdi
-import { mdiHome, mdiCog, mdiBluetooth, mdiWifi, mdiRaspberryPi, mdiInformation } from '@mdi/js'
+import { mdiViewDashboard, mdiCog, mdiBluetooth, mdiWifi, mdiRaspberryPi, mdiInformation } from '@mdi/js'
 
 export default {
-    name: 'Navbar',
     data: () => ({
-        homeIcon: mdiHome,
+        homeIcon: mdiViewDashboard,
         bluetoothIcon: mdiBluetooth,
         wifiIcon: mdiWifi,
         raspiIcon: mdiRaspberryPi,
