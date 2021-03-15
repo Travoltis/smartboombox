@@ -6,6 +6,7 @@
         Pairing Request mit OK bestätigen
         Musik abspielen
         Enjoy it</p>
+        navigator.bluetooth undefined???!!!???
         <v-btn id="button" @click="requestDeviceChooser" depressed class="pink white--text"><v-icon>Koppeln</v-icon></v-btn>
     </div>
 </template>

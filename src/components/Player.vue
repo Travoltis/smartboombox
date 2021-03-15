@@ -250,10 +250,16 @@ export default {
     border-top: 1px solid gray;
     bottom: 0;
     left: 0;
+    opacity: .9;
     padding: 5px;
     position: fixed;
     text-align: center;
     width: 100%;
+
+    &:hover {
+        box-shadow: 0 -5px 10px $shadowColor;
+        opacity: 1;
+    }
 
     p {
         margin: 0 !important;
